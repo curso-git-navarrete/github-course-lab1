@@ -1,0 +1,15 @@
+database:
+ host: ${DATABASE_HOST}
+ port: ${DATABASE_PORT}
+ name: ${DATABASE_NAME}
+ user: ${DATABASE_USER}
+ password: ${DATABASE_PASSWORD}
+api:
+ key: ${API_KEY}
+ url: ${API_BASE_URL}
+ timeout: 30
+security:
+ jwt_secret: ${JWT_SECRET}
+ encryption_key: ${ENCRYPTION_KEY}
+# NOTA: Los valores ${} deben reemplazarse con variables de entorno
+# NUNCA commitear el archivo config.yml con valores reales
