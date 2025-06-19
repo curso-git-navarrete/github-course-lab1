@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Laboratorio GitHub - Uriel Navarrete</title>
+ <style>
+ body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ color: #333;
+ min-height: 100vh;
+ }
+ .container {
+ background: white;
+ padding: 40px;
+ border-radius: 15px;
+ box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+ }
+ h1 { color: #2d3748; border-bottom: 3px solid #667eea; paddingbottom: 10px; }
+ h2 { color: #4a5568; margin-top: 30px; }
+ .badge {
+ display: inline-block;
+ background: #667eea;
+ color: white;
+ padding: 5px 10px;
+ border-radius: 20px;
+ font-size: 0.8em;
+ margin: 5px;
+ }
+ .progress {
+ background: #e2e8f0;
+ border-radius: 10px;
+ padding: 3px;
+ margin: 10px 0;
+ }
+ .progress-bar {
+ background: #667eea;
+ height: 20px;
+ border-radius: 7px;
+ transition: width 0.3s ease;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h1>� Laboratorio GitHub Enterprise</h1>
+ <p><strong>Estudiante:</strong>Uriel Navarrete</p>
+ <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+ <p><strong>Módulo:</strong> 1 - Introducción a GitHub Enterprise</p>
+
+ <h2>� Progreso del Laboratorio</h2>
+ <div class="progress">
+ <div class="progress-bar" style="width: 75%"></div>
+ </div>
+ <p>Progreso: 75% completado</p>
+
+ <h2>Ejercicios Completados</h2>
+ <div>
+ <span class="badge">Configuración SSH</span>
+ <span class="badge">Repositorio Creado</span>
+ <span class="badge">Colaboradores</span>
+ <span class="badge">Organización</span>
+ <span class="badge">GitHub Pages</span>
+ </div>
+
+ <h2>� Enlaces Importantes</h2>
+ <ul>
+ <li><a href="https://github.com/curso-git-navarrete/github-courselab1">Repositorio del Proyecto</a></li>
+ <li><a href="https://github.com/Uriel1993-Navarrete">Mi Perfil
+GitHub</a></li>
+ <li><a href="https://github.com/curso-git-navarrete">Mi
+Organización</a></li>
+ </ul>
+
+ <h2>Aprendizajes Clave</h2>
+ <ul>
+ <li>Configuración segura con SSH y 2FA</li>
+ <li>Gestión de colaboradores y permisos</li>
+ <li>Organización empresarial con teams</li>
+ <li>Hosting gratuito con GitHub Pages</li>
+ </ul>
+
+ <footer style="text-align: center; margin-top: 40px; padding-top:
+20px; border-top: 1px solid #e2e8f0;">
+ <p>Creado usando GitHub Pages</p>
+ </footer>
+ </div>
+
+ <script>
+ document.getElementById('fecha').textContent = new
+Date().toLocaleDateString('es-ES');
+
+ // Actualizar enlaces con información real
+ const username = '[tu-username]'; // Reemplazar con tu username real
+ const org = '[tu-org]'; // Reemplazar con tu organización real
+
+ document.querySelectorAll('a').forEach(link => {
+ if (link.href.includes('[tu-username]')) {
+ link.href = link.href.replace('[tu-username]', username);
+ }
+ if (link.href.includes('[tu-org]')) {
+ link.href = link.href.replace('[tu-org]', org);
+ }
+ });
+ </script>
+</body>
+</html>
